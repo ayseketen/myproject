@@ -15,8 +15,9 @@ if password:
         st.success("Giriş başarılı!")
 
 # Excel dosyasını yükle
-        dosya_adi = "sreamlit.xlsx"
-        df = pd.read_excel(dosya_adi)
+        url = https://docs.google.com/spreadsheets/d/1AwcUeUMRQxI9al4gF6-W8JuhDrL49Ecf/edit?usp=drive_link&ouid=116708887470539752475&rtpof=true&sd=true
+
+        df = pd.read_excel(url)
 
 
 
