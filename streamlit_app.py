@@ -15,7 +15,8 @@ if password:
         st.success("Giriş başarılı!")
 
 # Excel dosyasını yükle
-        url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSuQofsOYOu86BW0v74BS-aWr5dUhEEyAKaNZzZj8Yp3TckvDz4kYkDgWpFEv5EUQ/pub?gid=603615538&single=true&output=csv"
+
+        url = https://drive.google.com/uc?id=17j8gqcXKOytpifMmSfcoZF2Y6ApUxO2E&export=download
         df = pd.read_csv(url)
 
         df["TARIH"] = pd.to_datetime(df["TARIH"], errors="coerce")
