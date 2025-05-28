@@ -16,7 +16,7 @@ if password:
 
 # Excel dosyasını yükle
 
-        url = https://drive.google.com/uc?id=17j8gqcXKOytpifMmSfcoZF2Y6ApUxO2E&export=download
+        url = "https://drive.google.com/uc?id=17j8gqcXKOytpifMmSfcoZF2Y6ApUxO2E&export=download"
         df = pd.read_csv(url)
 
         df["TARIH"] = pd.to_datetime(df["TARIH"], errors="coerce")
