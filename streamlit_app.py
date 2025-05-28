@@ -15,11 +15,10 @@ if password:
         st.success("Giriş başarılı!")
 
 # Excel dosyasını yükle
-        url = https://docs.google.com/spreadsheets/d/1AwcUeUMRQxI9al4gF6-W8JuhDrL49Ecf/edit?usp=drive_link&ouid=116708887470539752475&rtpof=true&sd=true
+        url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSuQofsOYOu86BW0v74BS-aWr5dUhEEyAKaNZzZj8Yp3TckvDz4kYkDgWpFEv5EUQ/pub?gid=603615538&single=true&output=csv"
+        df = pd.read_csv(url)
 
-        df = pd.read_excel(url)
-
-
+        df["TARIH"] = pd.to_datetime(df["TARIH"], errors="coerce")
 
     # Filtreler
         ad_soyad = st.sidebar.multiselect("Ad Soyad", df["OPERATOR_ISIM"].unique())
